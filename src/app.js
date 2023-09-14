@@ -1,3 +1,6 @@
+import router from "@routes/router";
+
 (async function App() {
-    console.log("hello world");
+    window.addEventListener('load', router);
+    window.addEventListener('hashchange', router);
 })();
