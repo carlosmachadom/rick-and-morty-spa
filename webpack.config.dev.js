@@ -6,7 +6,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-    entry: "./public/js/index.js",
+    entry: "./public/js/main.js",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[contenthash].js",
@@ -72,7 +72,7 @@ module.exports = {
             filename: 'styles/[name].[contenthash].css'
         }),
         new DotEnv(),
-        new FaviconsWebpackPlugin('./public/assets/images/Favicon.png'),
+        new FaviconsWebpackPlugin('./public/assets/images/icons-rick-sanchez.svg'),
         new BundleAnalyzerPlugin()
     ],
     devServer: {
