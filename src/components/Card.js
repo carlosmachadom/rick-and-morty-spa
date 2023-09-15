@@ -1,6 +1,6 @@
 const HomeCard = ({ id, image, name, origin }) => {
     let view = `
-        <a class="character--link" href="#/${id}">
+        <a class="character--link" href="#/character/${id}">
             <article class="character--info">
                 <figure class="character__image">
                     <img src="${image}" alt="${name}"/>

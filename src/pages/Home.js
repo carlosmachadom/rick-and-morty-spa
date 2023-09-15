@@ -11,17 +11,17 @@ const Home = async () => {
 
             <ul class="characters-list">
                 ${characters.map((character) => {
-        const data = {
-            id: character.id,
-            image: character.image,
-            name: character.name,
-            origin: character.origin.name
-        }
+                const data = {
+                    id: character.id,
+                    image: character.image,
+                    name: character.name,
+                    origin: character.origin.name
+                }
 
-        const card = HomeCard(data);
+                const card = HomeCard(data);
 
-        return `<li class="character-card">${card}</li>`
-    }).join('')
+                return `<li class="character-card">${card}</li>`
+            }).join('')
         }
             </ul>
         </div>

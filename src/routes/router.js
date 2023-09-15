@@ -14,10 +14,10 @@ import resolveRoute from "@utils/resolveRoutes";
 
 /* Routes */
 const routes = {
-    "/": Home,
+    '/': Home,
     '/:id': Character,
-    "/about": About,
-    "*": NotFound
+    '/about': About,
+    '*': NotFound
 }
 
 /* Router */
@@ -30,7 +30,6 @@ const router = async () => {
     footer.innerHTML = await Footer();
 
     let urlHash = getHash();
-
     let route = await resolveRoute(urlHash);
     let render = routes[route] ? routes[route]() : routes['*']();
 
