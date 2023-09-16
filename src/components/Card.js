@@ -1,4 +1,4 @@
-const HomeCard = ({ id, image, name, origin }) => {
+const HomeCard = ({ id, image, name }) => {
     let view = `
         <a class="character--link" href="#/character/${id}">
             <article class="character--info">
@@ -6,8 +6,7 @@ const HomeCard = ({ id, image, name, origin }) => {
                     <img src="${image}" alt="${name}"/>
                 </figure>
                 <div class="character__data">
-                    <h3>Name: <span class="character-name">${name}</span></h3>
-                    <h3>Origin: <span class="character-origin">${origin}</span></h3>
+                    <h3 class="character-name">Name: <span>${name}</span></h3>
                 </div>
             </article>
         </a>

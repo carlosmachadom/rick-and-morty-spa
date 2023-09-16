@@ -1,4 +1,6 @@
 import mortyIcon from "@images/icons-morty.svg";
+import linkedinIcon from "@images/linkedin.png";
+import githubIcon from "@images/github-sign.png";
 
 const Footer = async () => {
     const view = await `
@@ -13,12 +15,16 @@ const Footer = async () => {
                 <p>Created by Carlos Machado</p>
             </section>
 
-            <ul class="nav--list>
+            <ul class="nav--list">
                 <li class="list__item">
-                    <a href="#">Github</a>
+                    <a href="https://github.com/carlosmachadom">
+                        <img src="${githubIcon}" alt="Github link" title="Github link"/>
+                    </a>
                 </li>
                 <li class="list__item">
-                    <a href="#">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/carlos-machado-mejia/">
+                        <img src="${linkedinIcon}" alt="Linkedin link" title="Linkedin link"/>
+                    </a>
                 </li>
             </ul>
         </nav>

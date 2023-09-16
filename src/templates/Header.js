@@ -9,7 +9,7 @@ const Header = async () => {
                 </a>
             </section>
 
-            <ul class="nav--list>
+            <ul class="nav--list">
                 <li class="list__item">
                     <a href="#/about">About</a>
                 </li>
