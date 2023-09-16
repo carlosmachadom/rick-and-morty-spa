@@ -1,9 +1,9 @@
 import charactersData from "@utils/getCharacters";
 import HomeCard from "@components/Card";
 
+
 const Home = async () => {
     const characters = await charactersData({});
-
     const view = await `
         <div class="general-content">
             <div class="title-container">
