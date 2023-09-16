@@ -25,18 +25,20 @@ li {
     list-style: none;
 }
 
-html {
+html,
+body {
     font-size: 62.5%;
     font-family: var(--main-font-family);
     color: var(--white);
+    background-color: var(--black);
 }
 
 .app {
     width: 100%;
+    min-width: 300px;
     min-height: 100svh;
     min-height: 100dvh;
     min-height: 100vh;
-    background-color: var(--black);
 
     display: grid;
     grid-template-columns: 1fr;
@@ -73,13 +75,12 @@ html {
     width: 100%;
     min-width: 300px;
     max-width: 1536px;
-    padding: 4rem 2rem;
     margin: 0 auto;
 }
 
 .app .content .general-content .title-container {
     width: 100%;
-    padding: 0 2rem 4rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
@@ -100,6 +101,8 @@ html {
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     place-items: center;
+    margin-block-end: 4rem;
+    margin-inline: 2rem;
 }
 
 .characters-list .character-card {
@@ -156,7 +159,6 @@ html {
     height: 100%;
     display: grid;
     place-items: center;
-    padding: 4rem 2rem;
 }
 
 .character-card {
@@ -168,23 +170,46 @@ html {
 }
 
 .character-card .character--image {
-    width: 40%;
+    width: 100%;
     min-width: 300px;
+    max-width: 420px;
 }
 
 .character-card .character--image img {
     width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
     object-fit: cover;
-}
-
-.character-card .character--data .character--name {
-    font-size: 2.6rem;
+    border-radius: 12px;
 }
 
 .character-card .character--data {
-    width: 60%;
+    width: 100%;
+    max-width: 420px;
     min-width: 300px;
+    padding: 2rem;
 }
+
+.character-card .character--data .character--name {
+    font-size: 3.2rem;
+    color: var(--violet-color);
+}
+
+.character-card .character--data .character--name span {
+    color: white;
+}
+
+.character-card .character--data h3 {
+    font-size: 2rem;
+    color: var(--portal-green);
+}
+
+.character-card .character--data h3 span {
+    font-weight: 300;
+    color: var(--white);
+}
+
+
 
 /* Components -- Footer */
 .footer {
