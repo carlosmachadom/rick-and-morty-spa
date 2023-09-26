@@ -4,7 +4,7 @@ import HomeCard from "@components/Card";
 
 const Home = async () => {
     const characters = await charactersData({});
-    const view = await `
+    const view = `
         <div class="general-content">
             <div class="title-container">
                 <h2 class="app--title">Welcome to Rick and Morty characters list</h2>
@@ -15,9 +15,8 @@ const Home = async () => {
                 ${characters["results"].map((character) => {
         const { id, image, name } = character;
         const card = HomeCard({ id, image, name });
-        return `<li class="character-card">${card}</li>`
-    }).join('')
-        }
+        return `<li class="character-card">${card}</li>`;
+    }).join('')}
             </ul>
         </div>
     `;
