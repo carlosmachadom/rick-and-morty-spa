@@ -209,7 +209,60 @@ body {
     color: var(--white);
 }
 
+/* Pages -- about */
+.about {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1536px;
+    height: 100%;
+    padding: 4rem 0;
+} 
 
+.about .title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: var(--yellow);
+    margin-block-end: 1rem;
+}
+
+.about .description {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--white);
+    margin-block-end: 1rem;
+}
+
+.about .features-title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--portal-green);
+    margin-block-end: 1rem;
+}
+
+.about .features-list {
+    width: 100%;
+}
+
+.about .about-image img {
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about .features-list .feature {
+    margin-block-end: 1.4rem;
+}
+
+.about .features-list .feature p,
+.about .features-list .feature p > strong {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.about .features-list .feature p>strong {
+    color: var(--violet-color);
+}
 
 /* Components -- Footer */
 .footer {
