@@ -31,9 +31,7 @@ Enlace al proyecto
 
 ## Imagen del proyecto
 
-<!--
-[![Rick and morty SPA](https://i.ibb.co/1bXzrbd/weather-app-cdm.png)](https://weather-app-cdm.netlify.app/)
- -->
+[![Rick and morty SPA](https://i.ibb.co/nQF3Kdy/rm-spa-cdm-netlify-app.png)](https://rm-spa-cdm.netlify.app/)
 
 ---
 
@@ -66,6 +64,4 @@ This project has been a great opportunity to learn and understand how SPAs work 
 
 ## Project image
 
-<!--
-[![Rick and morty SPA](https://i.ibb.co/1bXzrbd/weather-app-cdm.png)](https://weather-app-cdm.netlify.app/)
- -->
+[![Rick and morty SPA](https://i.ibb.co/nQF3Kdy/rm-spa-cdm-netlify-app.png)](https://rm-spa-cdm.netlify.app/)
